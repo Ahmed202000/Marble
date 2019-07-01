@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagemarble"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text=" انشاء حساب جديد"
+                android:textColor="#1d3775"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:drawableRight="@drawable/usersnume"
+                android:hint="الاسم بالكامل"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#696969" />
+
+            <EditText
+                android:id="@+id/txtusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:drawableRight="@drawable/user"
+                android:hint="اسم المستخدم"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#696969" />
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:drawableRight="@drawable/email"
+                android:hint="الائميل"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#696969" />
+
+            <EditText
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:drawableRight="@drawable/lock"
+                android:hint="كلمه المرور"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#696969" />
+
+            <EditText
+                android:id="@+id/txtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:drawableRight="@drawable/address"
+                android:hint="العنوان"
+                android:inputType="textPostalAddress"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#696969" />
+
+            <EditText
+                android:id="@+id/txtphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0"
+                android:drawableRight="@drawable/phone"
+                android:gravity="center"
+                android:hint="رقم التليفون"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#696969" />
+
+            <Button
+                android:id="@+id/btnCraeatAccuont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/spinsh_text"
+                android:gravity="center"
+                android:text="انشاء الحساب"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

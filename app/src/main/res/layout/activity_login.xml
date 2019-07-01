@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="@drawable/imagemarble">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/txtloginuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:drawableRight="@drawable/user"
+        android:hint="اسم المستخدم"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#696969"/>
+
+    <EditText
+        android:id="@+id/txtloginpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:hint="كلمه المرور"
+        android:drawableRight="@drawable/lock"
+        android:inputType="textPassword"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#696969"/>
+
+    <CheckBox
+        android:id="@+id/chkloginme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="تذكرني"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/spinsh_text"
+        android:text="تسجيل دخول"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/spinsh_text"
+        android:text="انشاء حساب جديد"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txtforget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="هل نسيت كلمه المرور ؟"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="7dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imgShopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:background="@drawable/shapeciercl"
+            android:padding="10dp"
+            app:srcCompat="@drawable/shopping"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtNumber_Of_Product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapeciercl_text"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="318dp"
+            tools:layout_editor_absoluteY="585dp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

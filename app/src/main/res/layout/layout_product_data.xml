@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@drawable/imagemarble"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_below="@+id/txtnameproduct"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text=" تكلفة المتر"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="180dp"
+            android:gravity="center"
+            android:layout_below="@+id/textView3"
+            android:text="الكميه المطلوبه"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtPrice_Meters"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtnameproduct"
+            android:layout_marginStart="210dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sheapbutton"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="UnknownId" />
+
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProduct_quntinty"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/spinsh_text"
+            android:drawableRight="@drawable/shopping"
+            android:padding="20dp"
+            android:text="اضافه في السله "
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtnameproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="147dp"
+            android:layout_marginRight="117dp"
+            android:gravity="center"
+            android:textColor="#FF0000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtProduct_quntinty"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPrice_Meters"
+            android:layout_marginStart="210dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="1dp"
+            android:text="1"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/sheapbutton"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

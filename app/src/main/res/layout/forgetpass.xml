@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="شكلك نسيت الباسورد اكتب الائميل الذي تريد عليه الباسورد الجديد"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <EditText
+        android:id="@+id/txtforgetemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_x="0dp"
+        android:layout_y="116dp"
+        android:background="@drawable/sheaplayout"
+        android:hint="Email @"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="60dp" />
+</AbsoluteLayout>
